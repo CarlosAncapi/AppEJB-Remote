@@ -1,13 +1,13 @@
 package org.cancapi.webapp.ejb.service;
 
+import jakarta.ejb.Stateful;
 import jakarta.ejb.Stateless;
 import org.cancapi.webapp.ejb.models.Producto;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//@RequestScoped
-@Stateless
+@Stateful
 public class ServiceEJB implements ServiceEJBRemote {
 
     private int contador;

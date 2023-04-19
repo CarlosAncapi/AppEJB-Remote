@@ -1,6 +1,10 @@
 package org.cancapi.webapp.ejb.models;
 
-public class Producto {
+import java.io.Serializable;
+
+public class Producto implements Serializable {
+
+    static final long serialVersionUID = 42743972947742L;
     private String nombre;
 
     public Producto(){
